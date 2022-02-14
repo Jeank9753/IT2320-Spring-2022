@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script>
+
+     "use strict"
+
+       var numFib = prompt("How many numbers in the sequence?"); 
+	   numFib = parseFloat(numFib);
+       
+       
+       if (numFib <= 3) {
+          alert("The sequence must have 3 or more numbers.");
+       }
+       
+       
+       else {
+       let z = 0 ;
+	      var myFib = [];  // declare the array
+		  myFib[0] = 0;
+		  myFib[1] = 1;
+
+		  
+
+		  // fill the array
+		 for (let x = 2; x < numFib; x++) {
+
+
+		 	myFib[x] = myFib[x-1]+myFib[x-2];
+
+
+
+
+
+		 	
+
+
+		 	
+
+        }  for (let x = 0; x < numFib ; x++) { //print numbers
+
+
+        //	myFib[x] = myFib[0] + myFib[1];
+
+
+ 	           document.write(myFib[x] +"<br>");
+
+       
+     	     }
+ }
+
+          // calculate the ratio
+	   var ratio = (myFib[numFib-1]+ myFib[numFib-2])/(myFib[numFib-1]);
+	   document.write("Ratio: " + ratio);
+
+
+
+</script>
+
+
+ <h2>Jean Kingombe - IT 2320 - Lab 2</h2>
+   gee, why did this come out at the bottom?
+
+
+</body>
+</html>
